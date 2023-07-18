@@ -1,7 +1,7 @@
 {
     "version": "over9000",
-    "ssid": "pwned",
-    "password": "deauther",
+    "ssid": "Aircrack-ng",
+    "password": "deauther1",
     "channel": 1,
     "hidden": false,
     "captivePortal": true,

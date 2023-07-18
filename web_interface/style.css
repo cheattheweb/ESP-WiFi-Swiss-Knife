@@ -2,10 +2,10 @@
 
 /* Global */
 body {
-	background: #36393e;
-	color: #bfbfbf;
-	font-family: sans-serif;
-	margin: 0;
+	background: rgb(66, 76, 92);
+	color: #d1c2c2;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0 ;
 }
 
 h1 {
@@ -62,6 +62,7 @@ p{
 }
 .centered{
 	text-align: center;
+	margin-top: 10dvi;
 }
 .select{
 	width: 98px !important;
