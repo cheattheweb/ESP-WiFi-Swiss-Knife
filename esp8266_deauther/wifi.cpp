@@ -281,8 +281,8 @@ namespace wifi {
             server.on("/scan.html", HTTP_GET, []() {
                 sendProgmem(scanhtml, sizeof(scanhtml), W_HTML);
             });
-            server.on("/info.html", HTTP_GET, []() {
-                sendProgmem(infohtml, sizeof(infohtml), W_HTML);
+            server.on("/attack.html", HTTP_GET, []() {
+                sendProgmem(attackhtml, sizeof(attackhtml), W_HTML);
             });
             server.on("/style.css", HTTP_GET, []() {
                 sendProgmem(stylecss, sizeof(stylecss), W_CSS);
