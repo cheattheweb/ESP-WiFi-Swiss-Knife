@@ -1,5 +1,3 @@
-/* This software is licensed under the MIT License: https://github.com/spacehuhntech/esp8266_deauther */
-
 var attackJSON = [[false, 0, 0], [false, 0, 0], [false, 0, 0]];
 
 function draw() {

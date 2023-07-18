@@ -1,5 +1,3 @@
-/* This software is licensed under the MIT License: https://github.com/spacehuhntech/esp8266_deauther */
-
 var ssidJson = { "random": false, "ssids": [] };
 
 function load() {
