@@ -1,5 +1,3 @@
-/* This software is licensed under the MIT License: https://github.com/spacehuhntech/esp8266_deauther */
-
 #pragma once
 
 #define ENABLE_DEBUG
@@ -67,7 +65,7 @@
   #define I2C_SDA 5
   #define I2C_SCL 4
 
-// #define FLIP_DIPLAY true
+  #define FLIP_DIPLAY true
 
 // ===== BUTTONS ===== //
   #define BUTTON_UP 14
