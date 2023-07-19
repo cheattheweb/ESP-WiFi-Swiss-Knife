@@ -134,11 +134,11 @@
 
 // ===== ACCESS POINT ===== //
 #ifndef AP_SSID
-  #define AP_SSID "pwned"
+  #define AP_SSID "Swiss Knife"
 #endif /* ifndef AP_SSID */
 
 #ifndef AP_PASSWD
-  #define AP_PASSWD "deauther"
+  #define AP_PASSWD "pass_swiss"
 #endif /* ifndef AP_PASSWD */
 
 #ifndef AP_HIDDEN
@@ -255,18 +255,6 @@
 #ifndef I2C_SCL
   #define I2C_SCL 4
 #endif /* ifndef I2C_SCL */
-
-#ifndef SPI_RES
-  #define SPI_RES 5
-#endif /* ifndef SPI_RES */
-
-#ifndef SPI_DC
-  #define SPI_DC 4
-#endif /* ifndef SPI_DC */
-
-#ifndef SPI_CS
-  #define SPI_CS 15
-#endif /* ifndef SPI_CS */
 
 // =============== BUTTONS =============== //
 #ifndef BUTTON_UP
