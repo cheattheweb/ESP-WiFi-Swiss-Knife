@@ -1,26 +1,24 @@
-# ESP8266 Deauther
+# ESP WiFi Swiss Knife
 
 <img src='https://deauther.com/img/logo.png' alt='Deauther Logo' width='200' />
 
-**Scan for WiFi devices, block selected connections, create dozens of networks and confuse WiFi scanners.**
-
-## New Documentation
-
-Hi 👋  
-Please visit [Deauther.com](https://deauther.com) for information about this project.  
-Here are some quick links:
-
-* [Buy](https://deauther.com/docs/buy)
-* [Download](https://deauther.com/docs/download)
-* [DIY Tutorial](https://deauther.com/docs/category/diy-tutorial)
-* [Usage](https://deauther.com/docs/category/usage)
-* [FAQ](https://deauther.com/docs/faq)
+**Scan for WiFi devices, block selected connections, create dozens of networks, detect dos attack and confuse WiFi scanners.**
 
 ## Password
 
 The password for `pwned` is `deauther`
 
 ## About this Project
+The ESP WiFi Swiss Knife project is a handhled device for network pentesters.
+
+### What are the Properties
+
+- Deauthentication Attack
+- Scan AP and Stations
+- Detect Deauthentication Attack
+- Rouge AP and Probe Request
+- Packet Monitoring
+- Clock
 
 This firmware allows you to easily perform a variety of actions to test 802.11 networks using an [ESP8266](https://www.espressif.com/en/products/socs/esp8266). It's also a great project for learning about WiFi, microcontrollers, Arduino, hacking and electronics/programming in general.  
 
