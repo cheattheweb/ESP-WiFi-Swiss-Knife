@@ -15,7 +15,6 @@ extern "C" {
 #include "Scan.h"
 #include "Attack.h"
 #include "DisplayUI.h"
-#include "led.h"
 
 extern Names names;
 extern SSIDs ssids;

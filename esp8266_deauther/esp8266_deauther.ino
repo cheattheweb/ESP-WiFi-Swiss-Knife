@@ -32,8 +32,6 @@ extern "C" {
 #include "DisplayUI.h"
 #include "A_config.h"
 
-#include "led.h"
-
 // Run-Time Variables //
 Names names;
 SSIDs ssids;
@@ -143,9 +141,6 @@ void setup() {
     // version
     prntln(DEAUTHER_VERSION);
 
-    // setup LED
-    led::setup();
-
     // setup reset button
     resetButton = new ButtonPullup(RESET_BUTTON);
 }
@@ -153,7 +148,6 @@ void setup() {
 void loop() {
     currentTime = millis();
 
-    led::update();   // update LED color
     wifi::update();  // manage access point
     attack.update(); // run attacks
     displayUI.update();
@@ -180,7 +174,6 @@ void loop() {
 
     resetButton->update();
     if (resetButton->holding(5000)) {
-        led::setMode(LED_MODE::SCAN);
         DISPLAY_MODE _mode = displayUI.mode;
         displayUI.mode = DISPLAY_MODE::RESETTING;
         displayUI.update(true);
@@ -190,7 +183,6 @@ void loop() {
 
         delay(2000);
 
-        led::setMode(LED_MODE::IDLE);
         displayUI.mode = _mode;
     }
 }

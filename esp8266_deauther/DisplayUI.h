@@ -10,19 +10,10 @@
 #include "Attack.h"
 
 // ===== adjustable ===== //
-#if defined(SSD1306_I2C)
-  #include <Wire.h>
-  #include "src/esp8266-oled-ssd1306-4.1.0/SSD1306Wire.h"
-#elif defined(SSD1306_SPI)
-  #include <SPI.h>
-  #include "src/esp8266-oled-ssd1306-4.1.0/SSD1306Spi.h"
-#elif defined(SH1106_I2C)
+#if defined(SH1106_I2C)
   #include <Wire.h>
   #include "src/esp8266-oled-ssd1306-4.1.0/SH1106Wire.h"
-#elif defined(SH1106_SPI)
-  #include <SPI.h>
-  #include "src/esp8266-oled-ssd1306-4.1.0/SH1106Spi.h"
-#endif /* if defined(SSD1306_I2C) */
+#endif
 
 #ifdef RTC_DS3231
 #include "src/DS3231-1.0.3/DS3231.h"
@@ -48,12 +39,12 @@ extern String right(String a, int len);
 extern String leftRight(String a, String b, int len);
 extern String replaceUtf8(String str, String r);
 
-const char D_INTRO_0[] PROGMEM = "ESP8266 Deauther";
-const char D_INTRO_1[] PROGMEM = "by @Spacehuhn";
+const char D_INTRO_0[] PROGMEM = "Wi-Fi Swiss Knife";
+const char D_INTRO_1[] PROGMEM = "Atromitos";
 const char D_INTRO_2[] PROGMEM = DISPLAY_TEXT;
 const char D_RESETTING[] PROGMEM = "Resetting...";
-const char D_SCANNING_0[] PROGMEM = "> Scanning";
-const char D_SCANNING_1[] PROGMEM = "> Scanning.";
+const char D_SCANNING_0[] PROGMEM = "> Starting";
+const char D_SCANNING_1[] PROGMEM = "> Starting";
 const char D_SCANNING_2[] PROGMEM = "> Scanning..";
 const char D_SCANNING_3[] PROGMEM = "> Scanning...";
 

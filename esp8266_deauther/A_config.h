@@ -305,7 +305,7 @@
 
 // ======== CONSTANTS ========== //
 // Do not change these values unless you know what you're doing!
-#define DEAUTHER_VERSION "2.6.1"
+#define DEAUTHER_VERSION "0.2.1"
 #define DEAUTHER_VERSION_MAJOR 2
 #define DEAUTHER_VERSION_MINOR 6
 #define DEAUTHER_VERSION_REVISION 1

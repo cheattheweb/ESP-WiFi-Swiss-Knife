@@ -815,7 +815,6 @@ void CLI::runCommand(String input) {
     // ===== STOP ===== //
     // stop [<mode>]
     else if (eqlsCMD(0, CLI_STOP)) {
-        led::setMode(IDLE, true);
 
         if ((list->size() >= 2) && !(eqlsCMD(1, CLI_ALL))) {
             for (int i = 1; i < list->size(); i++) {
@@ -1087,11 +1086,6 @@ void CLI::runCommand(String input) {
         }
     }
 
-    // ===== LED ===== //
-    // led <r> <g> <b> [<brightness>]
-    else if ((list->size() == 4) && eqlsCMD(0, CLI_LED)) {
-        led::setColor(list->get(1).toInt(), list->get(2).toInt(), list->get(3).toInt());
-    }
 
     // led <#rrggbb> [<brightness>]
     else if ((list->size() == 2) &&
@@ -1099,7 +1093,6 @@ void CLI::runCommand(String input) {
         uint8_t c[3];
         strToColor(list->get(1), c);
 
-        led::setColor(c[0], c[1], c[2]);
     }
 
     // ===== DELAY ===== //
@@ -1114,7 +1107,6 @@ void CLI::runCommand(String input) {
             scan.update();   // run scan
             attack.update(); // run attacks
             ssids.update();  // run random mode, if enabled
-            led::update();   // update LED color
 
             // auto-save
             if (settings::getAutosaveSettings().enabled && (currentTime - autosaveTime > settings::getAutosaveSettings().time)) {
