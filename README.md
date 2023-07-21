@@ -6,7 +6,7 @@
 
 ## Password
 
-The password for `pwned` is `deauther`
+The password for `Swiss Knife` is `pass_swiss`
 
 ## About this Project
 The ESP WiFi Swiss Knife project is a handhled device for network pentesters.
